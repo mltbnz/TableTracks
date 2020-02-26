@@ -18,7 +18,6 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
-    setup_travis
     clear_derived_data
   end
 
@@ -26,14 +25,9 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(
-      scheme: "KomootAR",
+      scheme: "TableTracks",
       devices: ["iPhone X"],
       code_coverage: true
-    )
-    xcov(
-      workspace: "Routes.xcworkspace",
-      scheme: "KomootAR",
-      output_directory: "xcov_output"
     )
   end
 end
