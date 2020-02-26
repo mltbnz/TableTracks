@@ -6,7 +6,7 @@
 BuildConfig/*.xcconfig
 
 ## Secrets
-# Resources/Secrets.plist
+Resources/Secrets.plist
 
 ## User settings
 xcuserdata/
