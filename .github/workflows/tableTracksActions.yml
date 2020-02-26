@@ -1,0 +1,37 @@
+name: CI
+on:
+  push:
+    branches:
+    - develop
+    - master
+  
+jobs:
+  test:
+    # Job name is test
+    name: Test
+    # This job runs on macOS
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
+        xcode: ['/Applications/Xcode_11.3.app/Contents/Developer']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Bundle Install
+        run: bundle install
+      - name: Build and test
+        run: bundle exec fastlane scan --destination "${destination}" --scheme "TableTracks"
+        env:
+          destination: ${{ matrix.destination }}
+          DEVELOPER_DIR: ${{ matrix.xcode }}
+      - name: Archive Failed Tests artifacts
+        if: failure()
+        uses: actions/upload-artifact@v1
+        with:
+          name: FailureDiff
+          path: TableTracksTests/FailureDiffs
+      - name: Releasing
+        run: bundle exec fastlane release
+        env:
+          DEVELOPER_DIR: ${{ matrix.xcode }}
