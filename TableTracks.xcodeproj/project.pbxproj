@@ -17,6 +17,9 @@
 		94CB5E642403E14100AA42C1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E632403E14100AA42C1 /* Kingfisher */; };
 		94CB5E662403E14100AA42C1 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E652403E14100AA42C1 /* KingfisherSwiftUI */; };
 		94CB5E692403E17400AA42C1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E682403E17400AA42C1 /* KeychainAccess */; };
+		94CB5E962406BCC600AA42C1 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E952406BCC600AA42C1 /* AppSecrets.swift */; };
+		94CB5E982406BE3200AA42C1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5E972406BE3200AA42C1 /* Secrets.plist */; };
+		94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		947067712402E5C30048413C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947067732402E5C30048413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CB5E6A2403E19200AA42C1 /* MapboxSceneKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapboxSceneKit.xcodeproj; path = "3rdParty/mapbox-scenekit/MapboxSceneKit.xcodeproj"; sourceTree = "<group>"; };
+		94CB5E952406BCC600AA42C1 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		94CB5E972406BE3200AA42C1 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				94CB5E6A2403E19200AA42C1 /* MapboxSceneKit.xcodeproj */,
+				94CB5E8A2406A43C00AA42C1 /* Resources */,
 				947067642402E5BC0048413C /* Source */,
 				947067632402E5BC0048413C /* Products */,
 				94CB5E452403DBC000AA42C1 /* Frameworks */,
@@ -86,10 +93,10 @@
 			children = (
 				947067652402E5BC0048413C /* AppDelegate.swift */,
 				947067672402E5BC0048413C /* SceneDelegate.swift */,
-				947067692402E5BC0048413C /* ContentView.swift */,
-				9470676B2402E5C30048413C /* Assets.xcassets */,
-				947067702402E5C30048413C /* LaunchScreen.storyboard */,
-				947067732402E5C30048413C /* Info.plist */,
+				94CB5E9E2406C24C00AA42C1 /* View */,
+				94CB5E9D2406C24000AA42C1 /* Model */,
+				94CB5E992406C1A000AA42C1 /* Util */,
+				94CB5E892406A42D00AA42C1 /* Assets */,
 				9470676D2402E5C30048413C /* Preview Content */,
 			);
 			path = Source;
@@ -117,6 +124,56 @@
 				94CB5E722403E19200AA42C1 /* Examples.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94CB5E892406A42D00AA42C1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9470676B2402E5C30048413C /* Assets.xcassets */,
+				947067702402E5C30048413C /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		94CB5E8A2406A43C00AA42C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				947067732402E5C30048413C /* Info.plist */,
+				94CB5E972406BE3200AA42C1 /* Secrets.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94CB5E992406C1A000AA42C1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				94CB5E9A2406C1BE00AA42C1 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		94CB5E9A2406C1BE00AA42C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94CB5E9D2406C24000AA42C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94CB5E952406BCC600AA42C1 /* AppSecrets.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94CB5E9E2406C24C00AA42C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				947067692402E5BC0048413C /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +271,7 @@
 				947067722402E5C30048413C /* LaunchScreen.storyboard in Resources */,
 				9470676F2402E5C30048413C /* Preview Assets.xcassets in Resources */,
 				9470676C2402E5C30048413C /* Assets.xcassets in Resources */,
+				94CB5E982406BE3200AA42C1 /* Secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				947067662402E5BC0048413C /* AppDelegate.swift in Sources */,
+				94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */,
+				94CB5E962406BCC600AA42C1 /* AppSecrets.swift in Sources */,
 				947067682402E5BC0048413C /* SceneDelegate.swift in Sources */,
 				9470676A2402E5BC0048413C /* ContentView.swift in Sources */,
 			);
@@ -370,7 +430,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +454,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

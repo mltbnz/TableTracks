@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  TableTracks
-//
-//  Created by Malte Bünz on 23.02.20.
-//  Copyright © 2020 Malte Bünz. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
