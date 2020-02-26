@@ -19,7 +19,6 @@
 		94CB5E692403E17400AA42C1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E682403E17400AA42C1 /* KeychainAccess */; };
 		94CB5E962406BCC600AA42C1 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E952406BCC600AA42C1 /* AppSecrets.swift */; };
 		94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */; };
-		94CB5EA02406C4C200AA42C1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5E9F2406C4C200AA42C1 /* Secrets.plist */; };
 		94CB5EE22406D00600AA42C1 /* TableTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5EE12406D00600AA42C1 /* TableTracksTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		94CB5E6A2403E19200AA42C1 /* MapboxSceneKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapboxSceneKit.xcodeproj; path = "3rdParty/mapbox-scenekit/MapboxSceneKit.xcodeproj"; sourceTree = "<group>"; };
 		94CB5E952406BCC600AA42C1 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
-		94CB5E9F2406C4C200AA42C1 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		94CB5EDF2406D00600AA42C1 /* TableTracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTracksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CB5EE12406D00600AA42C1 /* TableTracksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTracksTests.swift; sourceTree = "<group>"; };
 		94CB5EE32406D00600AA42C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				947067732402E5C30048413C /* Info.plist */,
-				94CB5E9F2406C4C200AA42C1 /* Secrets.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -320,7 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CB5EA02406C4C200AA42C1 /* Secrets.plist in Resources */,
 				947067722402E5C30048413C /* LaunchScreen.storyboard in Resources */,
 				9470676F2402E5C30048413C /* Preview Assets.xcassets in Resources */,
 				9470676C2402E5C30048413C /* Assets.xcassets in Resources */,
