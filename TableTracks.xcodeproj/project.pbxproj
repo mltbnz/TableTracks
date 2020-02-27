@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944D5EE92406FA2200993899 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D5EE82406FA2200993899 /* Configuration.swift */; };
+		944D5EEB2406FAD500993899 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D5EEA2406FAD500993899 /* API.swift */; };
 		947067662402E5BC0048413C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947067652402E5BC0048413C /* AppDelegate.swift */; };
 		947067682402E5BC0048413C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947067672402E5BC0048413C /* SceneDelegate.swift */; };
 		9470676A2402E5BC0048413C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947067692402E5BC0048413C /* ContentView.swift */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		944D5EE62406F8E900993899 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		944D5EE72406F90600993899 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		944D5EE82406FA2200993899 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		944D5EEA2406FAD500993899 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		947067622402E5BC0048413C /* TableTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947067652402E5BC0048413C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947067672402E5BC0048413C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,10 +89,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		944D5EE52406F8CD00993899 /* BuildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				944D5EE62406F8E900993899 /* debug.xcconfig */,
+				944D5EE72406F90600993899 /* release.xcconfig */,
+			);
+			path = BuildConfig;
+			sourceTree = "<group>";
+		};
 		947067592402E5BC0048413C = {
 			isa = PBXGroup;
 			children = (
 				94CB5E6A2403E19200AA42C1 /* MapboxSceneKit.xcodeproj */,
+				944D5EE52406F8CD00993899 /* BuildConfig */,
 				94CB5E8A2406A43C00AA42C1 /* Resources */,
 				947067642402E5BC0048413C /* Source */,
 				94CB5EE02406D00600AA42C1 /* Tests */,
@@ -163,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				94CB5E9A2406C1BE00AA42C1 /* Extensions */,
+				944D5EE82406FA2200993899 /* Configuration.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 		94CB5E9D2406C24000AA42C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				944D5EEA2406FAD500993899 /* API.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,10 +352,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944D5EE92406FA2200993899 /* Configuration.swift in Sources */,
 				947067662402E5BC0048413C /* AppDelegate.swift in Sources */,
 				94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */,
 				947067682402E5BC0048413C /* SceneDelegate.swift in Sources */,
 				9470676A2402E5BC0048413C /* ContentView.swift in Sources */,
+				944D5EEB2406FAD500993899 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +393,7 @@
 /* Begin XCBuildConfiguration section */
 		947067742402E5C30048413C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944D5EE62406F8E900993899 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -433,6 +454,7 @@
 		};
 		947067752402E5C30048413C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944D5EE72406F90600993899 /* release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
