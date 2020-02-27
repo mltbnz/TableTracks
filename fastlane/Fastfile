@@ -26,7 +26,7 @@ platform :ios do
   lane :test do
     scan(
       scheme: "TableTracks",
-      devices: ["iPhone X"],
+      devices: "iPhone 8",
       code_coverage: true
     )
   end
