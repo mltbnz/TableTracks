@@ -17,10 +17,8 @@
 		94CB5E642403E14100AA42C1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E632403E14100AA42C1 /* Kingfisher */; };
 		94CB5E662403E14100AA42C1 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E652403E14100AA42C1 /* KingfisherSwiftUI */; };
 		94CB5E692403E17400AA42C1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 94CB5E682403E17400AA42C1 /* KeychainAccess */; };
-		94CB5E962406BCC600AA42C1 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E952406BCC600AA42C1 /* AppSecrets.swift */; };
 		94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */; };
 		94CB5EE22406D00600AA42C1 /* TableTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5EE12406D00600AA42C1 /* TableTracksTests.swift */; };
-		94CB5EEA2406DBE400AA42C1 /* Secrets.Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5EE92406DBE400AA42C1 /* Secrets.Example.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +55,10 @@
 		947067712402E5C30048413C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947067732402E5C30048413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CB5E6A2403E19200AA42C1 /* MapboxSceneKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapboxSceneKit.xcodeproj; path = "3rdParty/mapbox-scenekit/MapboxSceneKit.xcodeproj"; sourceTree = "<group>"; };
-		94CB5E952406BCC600AA42C1 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		94CB5E9B2406C1D700AA42C1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		94CB5EDF2406D00600AA42C1 /* TableTracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTracksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CB5EE12406D00600AA42C1 /* TableTracksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTracksTests.swift; sourceTree = "<group>"; };
 		94CB5EE32406D00600AA42C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94CB5EE92406DBE400AA42C1 /* Secrets.Example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.Example.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				947067732402E5C30048413C /* Info.plist */,
-				94CB5EE92406DBE400AA42C1 /* Secrets.Example.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,7 +178,6 @@
 		94CB5E9D2406C24000AA42C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				94CB5E952406BCC600AA42C1 /* AppSecrets.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,7 +316,6 @@
 			files = (
 				947067722402E5C30048413C /* LaunchScreen.storyboard in Resources */,
 				9470676F2402E5C30048413C /* Preview Assets.xcassets in Resources */,
-				94CB5EEA2406DBE400AA42C1 /* Secrets.Example.plist in Resources */,
 				9470676C2402E5C30048413C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +336,6 @@
 			files = (
 				947067662402E5BC0048413C /* AppDelegate.swift in Sources */,
 				94CB5E9C2406C1D700AA42C1 /* Bundle+Extensions.swift in Sources */,
-				94CB5E962406BCC600AA42C1 /* AppSecrets.swift in Sources */,
 				947067682402E5BC0048413C /* SceneDelegate.swift in Sources */,
 				9470676A2402E5BC0048413C /* ContentView.swift in Sources */,
 			);
